@@ -23,7 +23,7 @@ jobs:
         language: [javascript, cpp]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install system dependencies
         if: matrix.language == 'cpp'
