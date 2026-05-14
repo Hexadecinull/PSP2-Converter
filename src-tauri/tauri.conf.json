@@ -1,0 +1,71 @@
+{
+  "build": {
+    "beforeDevCommand": "vite",
+    "beforeBuildCommand": "vite build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "PSP2 Converter",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "dialog": {
+        "all": true,
+        "open": true,
+        "save": true
+      },
+      "fs": {
+        "all": true,
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "createDir": true,
+        "exists": true,
+        "scope": ["**"]
+      },
+      "path": {
+        "all": true
+      },
+      "shell": {
+        "all": false
+      },
+      "window": {
+        "all": false,
+        "close": true,
+        "minimize": true,
+        "maximize": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "io.github.hexadecinull.psp2converter",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "PSP2 Converter",
+        "width": 860,
+        "height": 600,
+        "minWidth": 720,
+        "minHeight": 520,
+        "center": true,
+        "decorations": true
+      }
+    ]
+  }
+}
