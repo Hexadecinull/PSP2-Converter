@@ -8,7 +8,7 @@ repository = "https://github.com/Hexadecinull/PSP2-Converter"
 edition = "2021"
 
 [build-dependencies]
-tauri-build = { version = "1.5", features = [] }
+tauri-build = { version = "2.6", features = [] }
 
 [dependencies]
 tauri = { version = "1.5", features = ["dialog-all", "fs-all", "path-all", "window-close", "window-minimize", "window-maximize"] }
